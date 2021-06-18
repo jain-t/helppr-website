@@ -76,12 +76,12 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 
-function send_mail(){  
+function send_mail(){
   email = $("#email").val()
-  console.log(email)
   if (email == ""){
-    return false
+    return false;
   }
+  console.log(email)
 
   $.ajax({
     url:"https://prod.helppr.ai/access/early-access",
