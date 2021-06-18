@@ -77,7 +77,9 @@ function w3_close() {
 }
 
 function send_mail(){
-  email = $("email").val()
+  alert()
+  email = $("#email").val()
+  console.log(email)
   if (email == ""){
     return false
   }
@@ -87,4 +89,5 @@ function send_mail(){
     data: {"email": email}
   })
   alert("Please check your inbox")
+  return false
 }
