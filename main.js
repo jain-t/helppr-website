@@ -76,8 +76,7 @@ function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
 
-function send_mail(){
-  alert()
+function send_mail(){  
   email = $("#email").val()
   console.log(email)
   if (email == ""){
