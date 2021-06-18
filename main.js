@@ -86,7 +86,7 @@ function send_mail(){
   $.ajax({
     url:"https://prod.helppr.ai/access/early-access",
     data: {"email": email},
-    method: 'POST'
+    type: 'POST'
   })
   alert("Please check your inbox")
   return false
