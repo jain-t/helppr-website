@@ -77,11 +77,11 @@ function w3_close() {
 }
 
 function send_mail(){
-  email = $("#email").val()
+  email = $("#email").val();
   if (email == ""){
     return false;
   }
-  console.log(email)
+  console.log(email);
 
   $.ajax({
     url:"https://prod.helppr.ai/access/early-access",
