@@ -75,3 +75,16 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
+
+function send_mail(){
+  email = $("email").val()
+  if (email == ""){
+    return false
+  }
+
+  $.ajax({
+    url:"https://prod.helppr.ai/access/early-access",
+    data: {"email": email}
+  })
+  alert("Please check your inbox")
+}

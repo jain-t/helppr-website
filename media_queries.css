@@ -5,7 +5,7 @@
 }
 
 @media only screen and (max-width: 1212px) {
-    
+
     html{
         font-size: 70% !important;
     }
@@ -66,7 +66,7 @@
     }
 
     .privacy-padding{
-        padding: 5rem 2rem; 
+        padding: 5rem 2rem;
     }
   }
 
@@ -91,4 +91,12 @@
         padding: 0.5rem 1.5rem;
     }
 
+  }
+  @media (max-width:400px){
+    .desktop {
+      display: none !important;
+    }
+    .mobile {
+      display: block !important;
+    }
   }
