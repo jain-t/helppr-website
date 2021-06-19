@@ -84,7 +84,7 @@ function send_mail(){
   console.log(email);
 
   $.ajax({
-    url:"https://prod.helppr.ai/access/early-access/",
+    url:"https://prod.helppr.ai/access/mobile/trigger-email/",
     data: {"email": email},
     type: 'POST'
   })
